@@ -1,0 +1,12 @@
+SQL Injection Scan Results
+
+[!] Vulnerable (SQL error detected) with payload: 1'
+[-] Not vulnerable with payload: 1 OR 1=1
+[-] Not vulnerable with payload: 1 OR 1=2
+[-] Not vulnerable with payload: 1 AND 1=1
+[!] Vulnerable (Response length differs) with payload: 1 AND 1=2
+[!] Vulnerable (SQL error detected) with payload: 1' AND '1'='1
+[!] Vulnerable (SQL error detected) with payload: 1' AND '1'='2
+[!] Vulnerable (Response length differs) with payload: 1 UNION SELECT NULL
+[-] Not vulnerable with payload: 1 UNION SELECT 1,2,3
+[!] Vulnerable (Time delay detected) with payload: 1 AND SLEEP(5)
